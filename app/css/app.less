@@ -1,12 +1,66 @@
+@darkBorder: #322;
+@buttonBGcolor: #644;
+@calcColor: darkred;
+@blankColor: rgba(0, 0, 0, 0);
+
+#page-wrap{
+	//text-align: left;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 .button{
-	border: 1px solid #ccc;
-	padding: 5px;
+	border: 2px solid @darkBorder;
+	padding: 6px;
 	border-radius: 5px;
 	text-align: center;
 	border-spacing: 5px;
+	background-color: @buttonBGcolor;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	min-width: 25px; 
+}
+
+.operator{
+	background-color: #444450;
+}
+
+.button:hover{
+	background-color: #866;
 }
 
 table{
-	border-spacing: 10px;
+	border-spacing: 8px;
+	border-radius: 2px;
 	border-collapse: separate;
+	background-color: @calcColor;
+	border: 3px solid @darkBorder;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#display{
+	text-align: right;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	padding: 5px;
+	border: 3px solid @darkBorder;
+	width: 100%;
+	height: 20px;
+	font-size: 24px;
+}
+
+.blank{
+	border: none;
+	background-color: @blankColor;
+}
+
+::selection {
+	background: @blankColor; /* Safari */
+	}
+::-moz-selection {
+	background: @blankColor; /* Firefox */
 }
