@@ -1,13 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+
 @darkBorder: #322;
+@displayBGcolor: #575;
+@displayColor: #131;
 @buttonBGcolor: #644;
+@buttonHoverColor: #866;
+@operatorBGcolor: #444450;
+@operatorHoverColor: #666670;
+@signBGcolor: #444;
+@signHoverColor: #666;
 @calcColor: darkred;
 @blankColor: rgba(0, 0, 0, 0);
+
+body{
+	font-family: 'Source Code Pro', ;
+}
 
 #page-wrap{
 	//text-align: left;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
+}
+
+#page-wrap > *{
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .button{
@@ -23,22 +41,34 @@
 	min-width: 25px; 
 }
 
-.operator{
-	background-color: #444450;
+.button:hover{
+	background-color: @buttonHoverColor;
 }
 
-.button:hover{
-	background-color: #866;
+.operator{
+	background-color: @operatorBGcolor;
+}
+
+.operator:hover{
+	background-color: @operatorHoverColor;
+}
+
+#sign{
+	background-color: @signBGcolor;
+}
+
+#sign:hover{
+	background-color: @signHoverColor;
 }
 
 table{
-	border-spacing: 8px;
+	border-spacing: 4px;
 	border-radius: 2px;
 	border-collapse: separate;
+	padding: 4px;
 	background-color: @calcColor;
 	border: 3px solid @darkBorder;
-	margin-left: auto;
-	margin-right: auto;
+	display: inline-block;
 }
 
 #display{
@@ -51,6 +81,9 @@ table{
 	width: 100%;
 	height: 20px;
 	font-size: 24px;
+	font-weight: bold;
+	background-color: @displayBGcolor;
+	color: @displayColor;
 }
 
 .blank{
@@ -63,4 +96,25 @@ table{
 	}
 ::-moz-selection {
 	background: @blankColor; /* Firefox */
+}
+
+#queue{
+	min-height: 21px;
+	min-width: 100px;
+	background-color: #ccc;
+	border: 4px solid @darkBorder;
+	display: inline-block;
+	vertical-align: top;
+	font-weight: bold;
+	text-align: right;
+	background-color: @displayBGcolor;
+	color: @displayColor;
+}
+
+#queue > div{
+	border-bottom: 1px solid @displayColor
+}
+
+#queue > div:last-child{
+	border-bottom: none;
 }
