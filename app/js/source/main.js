@@ -43,33 +43,35 @@
 		var op = $(this).data('op');
 		var input= getInput();
 		var ans;
-		switch(op)
+		if(input.length > 0)
 		{
-			case 'add':
-				ans = input[1] + input[0];
-				break;
-			case 'subtract':
-				ans = input[1] - input[0];
-				break;
-			case 'multiply':
-				ans = input[1] * input[0];
-				break;
-			case 'divide':
-				ans = input[1] / input[0];
-				break;
-			case 'sum':
-				ans = sum(input);
-				break;
-			case 'exponent':
-				ans = exponent(input);
-				break;
-			case 'squareroot':
-				ans = Math.sqrt(input[0]);
-				break;
-			case 'factorial':
-				ans = factorial(input);	
-				break;
-
+			switch(op)
+			{
+				case 'add':
+					ans = input[1] + input[0];
+					break;
+				case 'subtract':
+					ans = input[1] - input[0];
+					break;
+				case 'multiply':
+					ans = input[1] * input[0];
+					break;
+				case 'divide':
+					ans = input[1] / input[0];
+					break;
+				case 'sum':
+					ans = sum(input);
+					break;
+				case 'exponent':
+					ans = exponent(input);
+					break;
+				case 'squareroot':
+					ans = Math.sqrt(input[0]);
+					break;
+				case 'factorial':
+					ans = factorial(input);	
+					break;
+			}
 		}
 		setDisplay(ans);
 	}

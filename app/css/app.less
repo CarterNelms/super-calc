@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
-@darkBorder: #322;
+@darkBorder: #422;
 @displayBGcolor: #575;
 @displayColor: #131;
 @buttonBGcolor: #644;
@@ -113,6 +113,11 @@ table{
 
 #queue > div{
 	border-bottom: 1px solid @displayColor
+}
+
+#queue > div:nth-child(2n){
+	background-color: @displayColor;
+	color: @displayBGcolor;
 }
 
 #queue > div:last-child{
