@@ -6,25 +6,11 @@
 
 	function initialize()
 	{
-		$('#title').click(title);
+		//$('#title').click(title);
 		$('.number').click(number);
 		$('.clear').click(clear);
 		$('#decimal').click(decimal);
 		$('#sign').click(sign);
-	}
-
-	function title()
-	{
-		var disp = $('#calculator').css('display');
-
-		if(disp === 'none')
-		{
-			$('#calculator').fadeIn();
-		}
-		else
-		{
-			$('#calculator').fadeOut();
-		}
 	}
 
 	function getDisplay()

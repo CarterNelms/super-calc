@@ -1,21 +1,31 @@
 {
-  "name": "client-template",
+  "name": "simple-calc",
   "version": "0.0.1",
   "private": true,
-  "scripts":{
+  "scripts": {
     "start": "node app.js"
   },
-  "dependencies":{
+  "dependencies": {
     "connect": "*"
   },
-  "devDependencies":{
-    "grunt"               : "*",
+  "devDependencies": {
+    "grunt": "*",
     "grunt-contrib-jshint": "*",
-    "jshint-stylish"      : "*",
-    "grunt-contrib-watch" : "*",
-    "grunt-contrib-copy"  : "*",
-    "grunt-contrib-jade"  : "*",
-    "grunt-contrib-less"  : "*",
-    "grunt-contrib-clean" : "*"
-  }
+    "jshint-stylish": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-clean": "*"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "db9404adaac62576590a69094d85dfb7cabf19e9",
+  "description": "Serves as a template for client JavaScript applications.",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarterNelms/super-calc.git"
+  },
+  "author": "Carter Nelms",
+  "license": "BSD"
 }
