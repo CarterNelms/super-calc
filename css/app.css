@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+body {
+  font-family: 'Source Code Pro';
+}
+#page-wrap {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#page-wrap > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  border: 2px solid #442222;
+  padding: 6px;
+  border-radius: 5px;
+  text-align: center;
+  border-spacing: 5px;
+  background-color: #664444;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  min-width: 25px;
+}
+.button:hover {
+  background-color: #886666;
+}
+.operator {
+  background-color: #444450;
+}
+.operator:hover {
+  background-color: #666670;
+}
+#sign {
+  background-color: #444444;
+}
+#sign:hover {
+  background-color: #666666;
+}
+table {
+  border-spacing: 4px;
+  border-radius: 2px;
+  border-collapse: separate;
+  padding: 4px;
+  background-color: #8b0000;
+  border: 3px solid #442222;
+  display: inline-block;
+}
+#display {
+  text-align: right;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+  border: 3px solid #442222;
+  width: 100%;
+  height: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #557755;
+  color: #113311;
+}
+.blank {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+::selection {
+  background: rgba(0, 0, 0, 0);
+  /* Safari */
+}
+::-moz-selection {
+  background: rgba(0, 0, 0, 0);
+  /* Firefox */
+}
+#queue {
+  min-height: 21px;
+  min-width: 100px;
+  background-color: #ccc;
+  border: 4px solid #442222;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+  text-align: right;
+  background-color: #557755;
+  color: #113311;
+}
+#queue > div {
+  border-bottom: 1px solid #113311;
+}
+#queue > div:nth-child(2n) {
+  background-color: #113311;
+  color: #557755;
+}
+#queue > div:last-child {
+  border-bottom: none;
+}
